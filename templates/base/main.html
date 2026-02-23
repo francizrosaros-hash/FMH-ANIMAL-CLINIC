@@ -35,11 +35,21 @@
 <div class="portal-messages" id="portalMessages">
   {% for message in messages %}
   <div class="portal-message {{ message.tags }}">
-    {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}<i class='bx bx-check-circle'></i>
-    {% elif message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}<i class='bx bx-error-circle'></i>
-    {% elif message.level == DEFAULT_MESSAGE_LEVELS.WARNING %}<i class='bx bx-error-alt'></i>
+    {% if 'success' in message.tags %}<i class='bx bx-check-circle'></i>
+    {% elif 'error' in message.tags or 'danger' in message.tags %}<i class='bx bx-error-circle'></i>
+    {% elif 'warning' in message.tags %}<i class='bx bx-error-alt'></i>
     {% else %}<i class='bx bx-info-circle'></i>{% endif %}
-    <span>{{ message }}</span>
+    
+    <div>
+      <strong>
+        {% if 'success' in message.tags %}Success
+        {% elif 'error' in message.tags or 'danger' in message.tags %}Error
+        {% elif 'warning' in message.tags %}Warning
+        {% else %}Information{% endif %}
+      </strong>
+      <span>{{ message }}</span>
+    </div>
+
     <button class="portal-message-close" onclick="this.parentElement.remove()"><i class='bx bx-x'></i></button>
   </div>
   {% endfor %}
