@@ -63,40 +63,60 @@
 </section>
 
 <!-- ============================================
-     HIGHLIGHTS SECTION
+     GOALS & BENEFITS SECTION
      ============================================ -->
-<section class="highlights-section" id="highlights">
-  <div class="container">
-    <h1 class="highlights-title fade-in">System <span class="teal-text">Highlights</span></h1>
-    <p class="section-subtitle fade-in">Experience the next generation of veterinary care with our integrated AI-driven platform.</p>
-    
-    <div class="highlights-grid">
-      <!-- Column 1: Services -->
-      <div class="highlight-col fade-in">
-        <div class="highlight-card">
-          <img src="{% static 'image/discoveryservice.png' %}" alt="Our Services" class="highlight-image">
-        </div>
-        <p class="highlight-tagline">Comprehensive care for every stage of your pet's life.</p>
-      </div>
-
-      <!-- Column 2: AI Diagnostic -->
-      <div class="highlight-col fade-in">
-        <p class="highlight-tagline">Faster and more accurate diagnoses with AI-powered insights.</p>
-        <div class="highlight-card">
-          <img src="{% static 'image/aisection.png' %}" alt="AI Diagnostics" class="highlight-image">
-        </div>
-      </div>
-
-      <!-- Column 3: Centralized -->
-      <div class="highlight-col fade-in">
-        <div class="highlight-card">
-          <img src="{% static 'image/float_img2.png' %}" alt="Centralized Records" class="highlight-image">
-        </div>
-        <p class="highlight-tagline">Seamlessly access your pet's medical records across all clinic branches in one secure hub.</p>
-      </div>
+<section class="split-section-wrapper bg-light" id="goals-benefits">
+  
+  <!-- Goals (Text Left, Image Right) -->
+  <div class="container split-container" style="padding-top: 6rem; padding-bottom: 3rem;">
+    <div class="split-content fade-in">
+      <h2 class="section-title">Our <span class="teal-text">Goals</span></h2>
+      <p class="section-description">At FMH Animal Clinic, we strive to elevate veterinary care through technology. Our goal is to provide a seamless, stress-free experience for both pets and their owners across all our branches.</p>
+      <ul class="feature-list">
+        <li><i class='bx bx-check-circle'></i> Provide rapid and accurate AI-assisted diagnoses.</li>
+        <li><i class='bx bx-check-circle'></i> Ensure centralized access to medical records.</li>
+        <li><i class='bx bx-check-circle'></i> Deliver compassionate, state-of-the-art care.</li>
+      </ul>
+    </div>
+    <div class="split-image fade-in">
+      <img src="{% static 'image/goals.png' %}" alt="Our Clinic Goals" loading="lazy" class="modern-radius shadow-lg">
     </div>
   </div>
+
+  <!-- Benefits (Image Left, Text Right) -->
+  <div class="container split-container reverse-mobile" style="padding-top: 3rem; padding-bottom: 6rem;">
+    <div class="split-image fade-in">
+      <img src="{% static 'image/benefits.png' %}" alt="Clinic Benefits" loading="lazy" class="modern-radius shadow-lg">
+    </div>
+    <div class="split-content fade-in">
+      <h2 class="section-title">The <span class="teal-text">Benefits</span></h2>
+      <p class="section-description">Experience the advantages of a modern veterinary system. By integrating AI diagnostics and cloud-based records, we eliminate wait times and ensure your pet receives the best possible treatment plan instantly.</p>
+      <ul class="feature-list">
+        <li><i class='bx bx-time-five'></i> Faster appointment scheduling and minimal wait times.</li>
+        <li><i class='bx bx-share-alt'></i> Easy sharing of records between our 3 clinic branches.</li>
+        <li><i class='bx bx-shield-plus'></i> Enhanced accuracy in early detection and prevention.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Pet Healthcare (Text Left, Image Right) -->
+  <div class="container split-container" style="padding-top: 3rem; padding-bottom: 6rem;">
+    <div class="split-content fade-in">
+      <h2 class="section-title">Compassionate <span class="teal-text">Healthcare</span></h2>
+      <p class="section-description">While our clinic runs on advanced technology, our heart is in patient care. Your pet is family, and our experienced veterinary staff is dedicated to making every check-up, treatment, and recovery as stress-free as possible.</p>
+      <ul class="feature-list">
+        <li><i class='bx bx-heart'></i> Gentle handling and fear-free examination techniques.</li>
+        <li><i class='bx bx-plus-medical'></i> Comprehensive preventive care, vaccinations, and surgeries.</li>
+        <li><i class='bx bx-clinic'></i> Spacious, clean, and climate-controlled recovery rooms.</li>
+      </ul>
+    </div>
+    <div class="split-image fade-in">
+      <img src="{% static 'image/health.png' %}" alt="Pet Healthcare" loading="lazy" class="modern-radius shadow-lg">
+    </div>
+  </div>
+
 </section>
+
 
 <!-- ============================================
      QUICK ACCESS SECTION 
